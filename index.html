@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>Soat va Taymer</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- 1. ANALOG SOAT QISMI -->
+    <div class="card">
+      <h2>Analog Soat</h2>
+      <div class="clock" id="clock">
+        <div class="center-dot"></div>
+        <div class="hand hour" id="hourHand"></div>
+        <div class="hand minute" id="minHand"></div>
+        <div class="hand second" id="secHand"></div>
+      </div>
+      <p id="clockText">00:00:00</p>
+    </div>
+
+    <!-- 2. TAYMER QISMI -->
+    <div class="card">
+      <h2>Taymer</h2>
+      <div class="display" id="timerDisplay">00:00</div>
+      
+      <!-- Istalgan sekundni kiritish uchun input -->
+      <div style="margin-bottom: 10px;">
+        <input type="number" id="timeInput" placeholder="Sekundni kiriting" style="width: 140px; padding: 5px; text-align: center;">
+      </div>
+
+      <p id="infoText">Sekund kiriting va Boshlashni bosing</p>
+      
+      <div class="buttons">
+        <button id="startBtn">Boshlash</button>
+        <button id="stopBtn">To'xtatish</button>
+        <button id="resetBtn">Qaytarish</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

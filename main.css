@@ -1,0 +1,133 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 260px;
+}
+
+h2 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Analog soat dizayni */
+.clock {
+  width: 180px;
+  height: 180px;
+  border: 6px solid #333;
+  border-radius: 50%;
+  margin: 0 auto 15px auto;
+  position: relative;
+  background-color: #fff;
+}
+
+/* Soat raqamlari */
+.num {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
+
+.center-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #e53e3e;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.hand {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+  border-radius: 4px;
+  z-index: 5;
+}
+
+.hand.hour {
+  width: 4px;
+  height: 45px;
+  background-color: #333;
+  margin-left: -2px;
+}
+
+.hand.minute {
+  width: 3px;
+  height: 65px;
+  background-color: #3182ce;
+  margin-left: -1.5px;
+}
+
+.hand.second {
+  width: 2px;
+  height: 75px;
+  background-color: #e53e3e;
+  margin-left: -1px;
+}
+
+#clockText {
+  font-weight: bold;
+  color: #555;
+  font-size: 15px;
+}
+
+/* Taymer displeyi */
+.display {
+  font-size: 36px;
+  font-weight: bold;
+  color: #2b6cb0;
+  background-color: #ebf8ff;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+#infoText {
+  font-size: 12px;
+  color: #718096;
+  margin-bottom: 12px;
+  height: 15px;
+}
+
+.buttons button {
+  padding: 6px 12px;
+  margin: 3px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+#startBtn { background-color: #48bb78; color: white; }
+#stopBtn { background-color: #f56565; color: white; }
+#resetBtn { background-color: #a0aec0; color: white; }
